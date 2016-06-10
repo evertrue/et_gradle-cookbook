@@ -5,6 +5,6 @@ license 'MIT'
 description 'Installs Gradle'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 recipe 'gradle::tarball', 'installs gradle from tarball'
-version '1.0.0'
+version '1.0.1'
 
 depends 'ark', '>= 0.0.0'
