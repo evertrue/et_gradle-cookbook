@@ -30,12 +30,6 @@ ark node['gradle']['name'] do
   prefix_home node['gradle']['home_dir']
   prefix_root node['gradle']['home_dir']
   prefix_bin "#{node['gradle']['home_dir']}/bin"
+  append_env_path true
   action :install
-end
-
-cookbook_file '/etc/profile.d/gradle.sh' do
-  owner 'root'
-  group 'root'
-  mode 0644
-  source 'etc/profile.d/gradle.sh'
 end
