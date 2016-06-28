@@ -1,5 +1,5 @@
 default['et_gradle']['name'] = 'gradle'
-default['et_gradle']['version'] = '2.8'
+default['et_gradle']['version'] = '2.14'
 default['et_gradle']['home_dir'] = '/usr/local'
 default['et_gradle']['release_url_prefix'] = 'http://services.gradle.org/distributions/gradle-'
 default['et_gradle']['release_url_suffix'] = '-bin.zip'

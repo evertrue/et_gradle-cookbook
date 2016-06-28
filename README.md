@@ -12,7 +12,7 @@ This cookbook is released under the MIT license. Feel free to redistribute, use 
 
 ## Attributes
 
-* `node['gradle']['version']` (default: `2.8`): Gradle version to install
+* `node['gradle']['version']` (default: `2.14`): Gradle version to install
 * `node['gradle']['home_dir']` (default: `/usr/local/gradle`): directory to install Gradle to
 
 ## Dependencies
