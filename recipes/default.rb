@@ -23,20 +23,21 @@
 
 include_recipe 'ark'
 
-release_url = "#{node['gradle']['release_url_prefix']}#{node['gradle']['version']}#{node['gradle']['release_url_suffix']}"
+release_url = "#{node['gradle']['release_url_prefix']}#{node['gradle']['version']}" \
+              "#{node['gradle']['release_url_suffix']}"
 
 ark node['gradle']['name'] do
-  url release_url
-  version node['gradle']['version']
+  url         release_url
+  version     node['gradle']['version']
   prefix_home node['gradle']['home_dir']
   prefix_root node['gradle']['home_dir']
-  prefix_bin "#{node['gradle']['home_dir']}/bin"
-  action :install
+  prefix_bin  "#{node['gradle']['home_dir']}/bin"
+  action      :install
 end
 
 file '/etc/profile.d/gradle.sh' do
   content 'PATH=/usr/local/gradle/bin:$PATH'
-  mode 0644
-  owner 'root'
-  group 'root'
+  mode    0644
+  owner   'root'
+  group   'root'
 end
