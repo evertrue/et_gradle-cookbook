@@ -32,13 +32,6 @@ ark node['et_gradle']['name'] do
   version     node['et_gradle']['version']
   prefix_home node['et_gradle']['home_dir']
   prefix_root node['et_gradle']['home_dir']
-  prefix_bin  "#{node['et_gradle']['home_dir']}/bin"
+  has_binaries %w(bin/gradle)
   action      :install
-end
-
-file '/etc/profile.d/gradle.sh' do
-  content 'PATH=/usr/local/gradle/bin:$PATH'
-  mode    0644
-  owner   'root'
-  group   'root'
 end
