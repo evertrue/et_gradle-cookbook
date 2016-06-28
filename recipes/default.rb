@@ -22,6 +22,7 @@
 #
 
 include_recipe 'ark'
+include_recipe 'java'
 
 release_url = "#{node['gradle']['release_url_prefix']}#{node['gradle']['version']}" \
               "#{node['gradle']['release_url_suffix']}"

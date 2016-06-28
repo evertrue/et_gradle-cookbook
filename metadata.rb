@@ -8,4 +8,5 @@ version          '1.0.2'
 
 recipe           'gradle::tarball', 'installs gradle from tarball'
 
+depends 'java', '~> 1.39'
 depends 'ark', '~> 1.0'
