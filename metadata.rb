@@ -1,4 +1,4 @@
-name             'gradle'
+name             'et_gradle'
 maintainer       'EverTrue'
 maintainer_email 'devops@evertrue.com'
 license          'MIT'

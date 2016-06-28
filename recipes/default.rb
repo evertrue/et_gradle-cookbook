@@ -24,15 +24,15 @@
 include_recipe 'ark'
 include_recipe 'java'
 
-release_url = "#{node['gradle']['release_url_prefix']}#{node['gradle']['version']}" \
-              "#{node['gradle']['release_url_suffix']}"
+release_url = "#{node['et_gradle']['release_url_prefix']}#{node['et_gradle']['version']}" \
+              "#{node['et_gradle']['release_url_suffix']}"
 
-ark node['gradle']['name'] do
+ark node['et_gradle']['name'] do
   url         release_url
-  version     node['gradle']['version']
-  prefix_home node['gradle']['home_dir']
-  prefix_root node['gradle']['home_dir']
-  prefix_bin  "#{node['gradle']['home_dir']}/bin"
+  version     node['et_gradle']['version']
+  prefix_home node['et_gradle']['home_dir']
+  prefix_root node['et_gradle']['home_dir']
+  prefix_bin  "#{node['et_gradle']['home_dir']}/bin"
   action      :install
 end
 
