@@ -1,10 +1,11 @@
-name 'gradle'
-maintainer 'Michael S. Klishin'
-maintainer_email 'michael@clojurewerkz.org'
-license 'MIT'
-description 'Installs Gradle'
+name             'gradle'
+maintainer       'EverTrue'
+maintainer_email 'devops@evertrue.com'
+license          'MIT'
+description      'Installs Gradle'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-recipe 'gradle::tarball', 'installs gradle from tarball'
-version '1.0.2'
+version          '1.0.2'
+
+recipe           'gradle::tarball', 'installs gradle from tarball'
 
 depends 'ark', '~> 1.0'
