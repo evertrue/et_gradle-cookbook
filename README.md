@@ -2,7 +2,7 @@
 
 This is a Chef cookbook for [Gradle](http://gradle.org), a modern build tool.
 
-It uses official releases from gradle.org to install Gradle under `/usr/local/gradle`, provides an `/etc/profile.d` script that prepends Gradle's `bin` directory to the `$PATH` and allows you to tweak version using Chef node attributes.
+It uses official releases from gradle.org to install Gradle under `/usr/local/gradle`, symlinking the binary to `/usr/local/bin`.
 
 This cookbook is released under the MIT license. Feel free to redistribute, use in commercial projects and modify to fit your needs.
 
@@ -17,7 +17,7 @@ This cookbook is released under the MIT license. Feel free to redistribute, use 
 
 ## Dependencies
 
-Tested and used with OpenJDK 8, Oracle JDK 8, OpenJDK 7.
+Tested and used with OpenJDK 8, Oracle JDK 8, OpenJDK 7, OpenJDK 6.
 
 ## Copyright & License
 
